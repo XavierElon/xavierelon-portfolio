@@ -15,15 +15,22 @@ const Navbar = () => {
 
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20">
+      <div className="hidden md:flex gap-4">
+        {links.map((link) => (
+          <Link href={link.url} key={link.title}>
+            {link.title}
+          </Link>
+        ))}
+      </div>
       {/* LOGO */}
-      <div className="">
+      <div className="md:hidden">
         <Link href="/" className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center">
           <span className="text-white mr-1 px-1">Xavier</span>
           <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">Elon</span>
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
-      <div className="">
+      <div className="md:hidden">
         <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={() => setOpen((prev) => !prev)}>
           <div className="w-10 h-1 bg-black rounded"></div>
           <div className="w-10 h-1 bg-black rounded"></div>
