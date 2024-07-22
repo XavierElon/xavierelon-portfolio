@@ -18,7 +18,7 @@ const Homepage = () => {
           {/* DESC */}
           <p className="md:text-xl">Placeholder.</p>
           {/* BUTTONS */}
-          <div className="w-full flex gap-4">
+          <div className="w-full flex gap-4 justify-center">
             <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button>
             <button className="p-4 rounded-lg ring-1 ring-black">Contact Me</button>
           </div>
