@@ -65,7 +65,39 @@ const AboutPage = () => {
             </svg>
           </div>
           {/* EXPERIENCE CONTAINER  */}
-          <div className="">EXPERIENCE</div>
+          <div className="flex flex-col gap-12 justify-center pb-48">
+            {/* EXPERIENCE TITLE */}
+            <h1 className="font-bold text-2xl">EXPERIENCE</h1>
+            {/* EXPERIENCE LIST */}
+            <div className="">
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 bg-red-200">
+                  {/* JOB TITLE */}
+                  <div className="">SENIOR FULL-STACK ENGINEER</div>
+                  {/* JOB DESCRIPTION */}
+                  <div className="">I worked here</div>
+                  {/* JOB DATE */}
+                  <div className="">03/2023 - PRESENT</div>
+                  {/* JOB COMPANY */}
+                  <div className="">BOOZ-ALLEN HAMILTON</div>
+                </div>
+
+                {/* CENTER */}
+                <div className="w-1/6 bg-red-500">
+                  {/* LINE */}
+                  <div className="">
+                    {/* CIRCLE */}
+                    <div className=""></div>
+                  </div>
+                </div>
+
+                {/* RIGHT */}
+                <div className="w-1/3 bg-red-200"></div>
+              </div>
+            </div>
+          </div>
         </div>
         {/* SVG CONTAINER  */}
         <div className="hidden"></div>
