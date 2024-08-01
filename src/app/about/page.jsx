@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <motion.div className="h-full" initial={{ y: '-200vh' }} animate={{ y: '0%' }} transition={{ duration: 1 }}>
       {/* CONTAINER */}
-      <div className="">
+      <div className="h-full overflow-scroll">
         {/* TEXT CONTAINER  */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
           {/* BIORGRAPHY CONTAINER  */}
@@ -75,13 +75,13 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 bg-red-200">
                   {/* JOB TITLE */}
-                  <div className="">SENIOR FULL-STACK ENGINEER</div>
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Senio Full-Stack Engineer</div>
                   {/* JOB DESCRIPTION */}
-                  <div className="">I worked here</div>
+                  <div className="p-3 text-sm italic">I worked here</div>
                   {/* JOB DATE */}
-                  <div className="">03/2023 - PRESENT</div>
+                  <div className="p-3 text-red-400 text-sm font-semibold">03/2023 - PRESENT</div>
                   {/* JOB COMPANY */}
-                  <div className="">BOOZ-ALLEN HAMILTON</div>
+                  <div className="p-1 rounded bg-white text-sm font-semibold">BOOZ-ALLEN HAMILTON</div>
                 </div>
 
                 {/* CENTER */}
