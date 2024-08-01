@@ -5,9 +5,9 @@ const AboutPage = () => {
   return (
     <motion.div className="h-full" initial={{ y: '-200vh' }} animate={{ y: '0%' }} transition={{ duration: 1 }}>
       {/* CONTAINER */}
-      <div className="h-full overflow-scroll">
+      <div className="h-full overflow-scroll lg:flex">
         {/* TEXT CONTAINER  */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
           {/* BIORGRAPHY CONTAINER  */}
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
@@ -73,7 +73,7 @@ const AboutPage = () => {
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
-                <div className="w-1/3 bg-red-200">
+                <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Senio Full-Stack Engineer</div>
                   {/* JOB DESCRIPTION */}
@@ -85,22 +85,80 @@ const AboutPage = () => {
                 </div>
 
                 {/* CENTER */}
-                <div className="w-1/6 bg-red-500">
+                <div className="w-1/6 flex justify-center">
                   {/* LINE */}
-                  <div className="">
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* CIRCLE */}
-                    <div className=""></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
                 </div>
 
                 {/* RIGHT */}
-                <div className="w-1/3 bg-red-200"></div>
+                <div className="w-1/3"></div>
               </div>
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3">
+                  
+                </div>
+
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+
+                {/* RIGHT */}
+                <div className="w-1/3">
+                
+                {/* JOB TITLE */}
+                <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Senio Full-Stack Engineer</div>
+                  {/* JOB DESCRIPTION */}
+                  <div className="p-3 text-sm italic">I worked here</div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">03/2023 - PRESENT</div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold">BOOZ-ALLEN HAMILTON</div>
+                </div>
+              </div>
+
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Senio Full-Stack Engineer</div>
+                  {/* JOB DESCRIPTION */}
+                  <div className="p-3 text-sm italic">I worked here</div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">03/2023 - PRESENT</div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold">BOOZ-ALLEN HAMILTON</div>
+                </div>
+
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+
+                {/* RIGHT */}
+                <div className="w-1/3"></div>
+              </div>
+
+              
             </div>
           </div>
         </div>
         {/* SVG CONTAINER  */}
-        <div className="hidden"></div>
+        <div className="hidden lg:block w-1/3 xl:1/2"></div>
       </div>
     </motion.div>
   )
