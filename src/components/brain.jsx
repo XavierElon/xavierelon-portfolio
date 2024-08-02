@@ -126,9 +126,10 @@ const Brain = ({ scrollYProgress }) => {
                     fill="#FFF"
                     style={{ rotate: rotatesForward3 }}
                   />
-                  <path
+                  <motion.path
                     d="M43.738 56.495c-7.091 0-12.847-5.753-12.847-12.848 0-7.098 5.756-12.851 12.847-12.851 7.099 0 12.852 5.753 12.852 12.851 0 7.095-5.753 12.848-12.852 12.848z"
                     id="Path-Copy-4"
+                    style={{ rotate: rotatesBackward4 }}
                   />
                 </g>
                 <g
