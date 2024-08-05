@@ -1,10 +1,19 @@
 {
   "extends": [
     "eslint:recommended",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
   ],
+  "plugins": ["react", "prettier"],
   "rules": {
     "react/prop-types": "off",
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
