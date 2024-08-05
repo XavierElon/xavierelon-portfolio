@@ -1,4 +1,6 @@
 'use client'
+
+import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -8,7 +10,11 @@ const NavLink = ({ link }) => {
   console.log(pathname)
 
   return (
-    <Link className={`rounded p-1 ${pathname === link.url && 'bg-black text-white'}`} href={link.url} key={link.title}>
+    <Link
+      className={`rounded p-1 ${pathname === link.url && 'bg-black text-white'}`}
+      href={link.url}
+      key={link.title}
+    >
       {link.title}
     </Link>
   )

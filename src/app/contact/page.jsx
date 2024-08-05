@@ -1,20 +1,20 @@
-'use client';
+'use client'
 
-import { useRef, useState } from 'react';
-import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
+import { React, useRef, useState } from 'react'
+import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
 
 const ContactPage = () => {
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
-  const text = 'Say Hello';
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(false)
+  const text = 'Say Hello'
 
-  const form = useRef();
+  const form = useRef()
 
   const sendEmail = (e) => {
-    e.preventDefault();
-    setError(false);
-    setSuccess(false);
+    e.preventDefault()
+    setError(false)
+    setSuccess(false)
 
     emailjs
       .sendForm(
@@ -27,15 +27,15 @@ const ContactPage = () => {
       )
       .then(
         () => {
-          setSuccess(true);
-          form.current.reset();
+          setSuccess(true)
+          form.current.reset()
         },
         (error) => {
-          setError(true);
-          console.error('FAILED...', error.text);
+          setError(true)
+          console.error('FAILED...', error.text)
         }
-      );
-  };
+      )
+  }
 
   return (
     <motion.div
@@ -99,7 +99,7 @@ const ContactPage = () => {
         </form>
       </div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default ContactPage;
+export default ContactPage

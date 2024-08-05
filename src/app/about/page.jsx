@@ -1,17 +1,18 @@
-'use client';
-import Brain from '@/components/brain';
-import { motion, useInView, useScroll } from 'framer-motion';
-import { useRef } from 'react';
-import Image from 'next/image';
+'use client'
+
+import Brain from '@/components/brain'
+import { motion, useInView, useScroll } from 'framer-motion'
+import { React, useRef } from 'react'
+import Image from 'next/image'
 
 const AboutPage = () => {
-  const containerRef = useRef();
-  const skillRef = useRef();
-  const experienceRef = useRef();
+  const containerRef = useRef()
+  const skillRef = useRef()
+  const experienceRef = useRef()
 
-  const { scrollYProgress } = useScroll({ container: containerRef });
-  const isSkillRefInView = useInView(skillRef, { margin: '-100px' });
-  const isExperienceRefInView = useInView(experienceRef, { margin: '-100px' });
+  const { scrollYProgress } = useScroll({ container: containerRef })
+  const isSkillRefInView = useInView(skillRef, { margin: '-100px' })
+  const isExperienceRefInView = useInView(experienceRef, { margin: '-100px' })
 
   return (
     <motion.div
@@ -306,7 +307,7 @@ const AboutPage = () => {
         </div>
       </div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default AboutPage;
+export default AboutPage

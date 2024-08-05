@@ -1,9 +1,9 @@
-'use client';
+'use client'
 
-import Image from 'next/image';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
-import Link from 'next/link';
+import Image from 'next/image'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { React, useRef } from 'react'
+import Link from 'next/link'
 
 const items = [
   {
@@ -38,13 +38,13 @@ const items = [
     img: 'https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     link: 'https://lama.dev',
   },
-];
+]
 
 const PortfolioPage = () => {
-  const ref = useRef();
+  const ref = useRef()
 
-  const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ['0%', '-80%']);
+  const { scrollYProgress } = useScroll({ target: ref })
+  const x = useTransform(scrollYProgress, [0, 1], ['0%', '-80%'])
 
   return (
     <motion.div
@@ -117,7 +117,7 @@ const PortfolioPage = () => {
         </div>
       </div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default PortfolioPage;
+export default PortfolioPage
