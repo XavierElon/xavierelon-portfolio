@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import React from 'react'
 
 const TestPage = () => {
   const variants = {
@@ -9,22 +10,26 @@ const TestPage = () => {
       y: 300,
       opacity: 0.5,
       transition: {
-        duration: 3
-      }
+        duration: 3,
+      },
     },
     variant2: {
       x: 100,
       y: -300,
       rotation: 90,
       transtion: {
-        duration: 2
-      }
-    }
+        duration: 2,
+      },
+    },
   }
 
   return (
     <div className="h-full flex items-center justify-center">
-      <motion.div className="w-96 h-96 bg-red-400 rounded" variants={variants} animate="variant2"></motion.div>
+      <motion.div
+        className="w-96 h-96 bg-red-400 rounded"
+        variants={variants}
+        animate="variant2"
+      ></motion.div>
     </div>
   )
 }
