@@ -6,6 +6,7 @@ import { React, useEffect, useState } from 'react'
 import NavLink from './navLink'
 import { motion } from 'framer-motion'
 
+import logo from '../../public/logo.png'
 import leetcode from '../../public/leetcode.png'
 import linkedin from '../../public/linkedin.png'
 import github from '../../public/github.png'
@@ -111,6 +112,9 @@ const Navbar = () => {
             Elon
           </span>
         </Link>
+      </div>
+      <div className="logo sm:flex sm:justify-center sm:items-center">
+        <Image src={logo} alt="" width={40} height={40} />
       </div>
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3 justify-end">
