@@ -6,6 +6,11 @@ import { React, useEffect, useState } from 'react'
 import NavLink from './navLink'
 import { motion } from 'framer-motion'
 
+import leetcode from '../../public/leetcode.png'
+import linkedin from '../../public/linkedin.png'
+import github from '../../public/github.png'
+import youtube from '../../public/youtube.png'
+
 const links = [
   { url: '/', title: 'Home' },
   { url: '/about', title: 'About' },
@@ -109,23 +114,17 @@ const Navbar = () => {
       </div>
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3 justify-end">
-        <Link href="/">
-          <Image src="/github.png" alt="" width={24} height={24} />
+        <Link href="https://github.com/XavierElon">
+          <Image src={github} alt="" width={24} height={24} />
         </Link>
-        <Link href="/">
-          <Image src="/dribbble.png" alt="" width={24} height={24} />
+        <Link href="https://www.youtube.com/@xavierelon">
+          <Image src={youtube} alt="" width={24} height={24} />
         </Link>
-        <Link href="/">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
+        <Link href="https://www.linkedin.com/in/xavierelon/">
+          <Image src={linkedin} alt="" width={24} height={24} />
         </Link>
-        <Link href="/">
-          <Image src="/facebook.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/pinterest.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
+        <Link href="https://leetcode.com/u/XavierElon/">
+          <Image src={leetcode} alt="" width={30} height={30} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
