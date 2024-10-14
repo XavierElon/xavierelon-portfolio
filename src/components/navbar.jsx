@@ -16,8 +16,8 @@ const links = [
   { url: '/', title: 'Home' },
   { url: '/about', title: 'About' },
   { url: '/portfolio', title: 'Portfolio' },
-  { url: 'https://alphaprogramming.io', title: 'Blog' },
   { url: '/contact', title: 'Contact' },
+  { url: 'https://wtfprogramming.io', title: 'Blog' },
 ]
 
 const Navbar = () => {
@@ -113,7 +113,7 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
-      <div className="logo sm:flex sm:justify-center sm:items-center">
+      <div className="block md:hidden">
         <Image src={logo} alt="" width={40} height={40} />
       </div>
       {/* SOCIAL */}
