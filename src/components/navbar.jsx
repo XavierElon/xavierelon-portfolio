@@ -17,7 +17,7 @@ const links = [
   { url: '/about', title: 'About' },
   { url: '/portfolio', title: 'Portfolio' },
   { url: '/contact', title: 'Contact' },
-  { url: 'https://wtfprogramming.io', title: 'Blog' },
+  { url: 'https://wtfprogramming.io', title: 'Blog', external: true },
 ]
 
 const Navbar = () => {
@@ -97,9 +97,21 @@ const Navbar = () => {
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* LINKS */}
       <div className="hidden md:flex gap-4 w-1/3">
-        {links.map((link) => (
-          <NavLink link={link} key={link.title} />
-        ))}
+        {links.map((link) =>
+          link.external ? (
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={link.title}
+              style={{ position: 'relative', top: '0.25rem' }}
+            >
+              {link.title}
+            </a>
+          ) : (
+            <NavLink link={link} key={link.title} />
+          )
+        )}
       </div>
       {/* LOGO */}
       <div className="md:hidden lg:flex xl:w-1/3 justify-center">
