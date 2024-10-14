@@ -16,13 +16,20 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-          <Image src={me} alt="" fill className="object-contain rounded-3xl" />
+        <div className="lg:w-1/2 flex flex-col items-center justify-center mb-8 lg:mb-0">
+          {/* Image Wrapper with Rounded Borders */}
+          <div className="relative w-full h-64 sm:h-96 flex items-center justify-center rounded-3xl overflow-hidden">
+            <Image src={me} alt="Xavier Elon's Profile Picture" fill />
+          </div>
+          {/* Text Underneath Image */}
+          <p className="mt-4 text-center text-sm text-gray-700">
+            (Real photo of me, not AI ^)
+          </p>
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
-          <h1 className="text-4xl md:text-6xl font-bold mt-20">
+          <h1 className="text-4xl md:text-6xl font-bold mt-240 p-2">
             I Shape the Future
           </h1>
           {/* DESC */}
@@ -49,13 +56,13 @@ const Homepage = () => {
           {/* BUTTONS */}
           <div className="w-full flex gap-4 justify-center">
             <Link href="/portfolio">
-              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-gray-800 transition">
                 View My Work
               </button>
             </Link>
 
             <Link href="/contact">
-              <button className="p-4 rounded-lg ring-1 ring-black">
+              <button className="p-4 rounded-lg ring-1 ring-black hover:bg-gray-100 transition">
                 Contact Me
               </button>
             </Link>
