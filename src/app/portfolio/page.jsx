@@ -9,34 +9,34 @@ const items = [
   {
     id: 1,
     color: 'from-red-300 to-blue-300',
-    title: 'React Commerce',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://lama.dev',
+    title: 'X Chat App',
+    desc: "A full-stack website I architected and built that contains it's own local user authorization and authentication microservice that I wrote myself. Users can log in and chat with each other as well as chat with ChatGPT. More features and enhancements to come in the future. The front-end is written in Next.JS, React, and Typescript. The back-end consists of several microservices written in either Node/Express that are hosted on Heroku. The databases being used are MongoDB, PostgreSQL and Firebase for messages/authentication as well as authentication. Unit and integration tests are being done with Mocha and Chai. AWS is being used for pipelines, servers and domain names (CodePipeline, EC2, ELB, Route 53, S3, Codebuild, VPC, etc.)",
+    img: '/images/xsj-chat-app.png',
+    link: 'xsj-ui.vercel.app',
   },
   {
     id: 2,
     color: 'from-blue-300 to-violet-300',
-    title: 'Next.js Medium Blog',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://lama.dev',
+    title: 'AI Chatbot App',
+    desc: 'Full-stack AI chatbot. Front-end built in React/Typescript. Backend built in Node/Express. Authentication handled by Clerk. AI model used is Gemini Pro.',
+    img: '/images/ai-chatbot.png',
+    link: 'https://github.com/XavierElon/ai-chatbot',
   },
   {
     id: 3,
     color: 'from-violet-300 to-purple-300',
-    title: 'Vanilla Book App',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://lama.dev',
+    title: 'WTF Programming Blog',
+    desc: 'Lightweight, SEO friendly personal blog built in Hugo, vanilla Javascript and CSS. Write various blog posts about career and software engineering.',
+    img: '/images/wtfprogrammingblog.png',
+    link: 'https://wtfprogramming.io/',
   },
   {
     id: 4,
     color: 'from-purple-300 to-red-300',
-    title: 'Spotify Music App',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    link: 'https://lama.dev',
+    title: 'Users Authorization & Authentication Service',
+    desc: 'Microservice for user models, authorization and authentication written in NodeJs, Express and Typescript. Unit and integration tests are written in Mocha and Chai.',
+    img: '/images/users-service.png',
+    link: 'https://github.com/XavierElon/xsj-users-microservice',
   },
 ]
 
@@ -88,7 +88,7 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-8xl">Do you have a project?</h1>
+        <h1 className="text-8xl">Is your company hiring?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
@@ -104,7 +104,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer and UI Designer
+                Full Stack Engineer
               </textPath>
             </text>
           </motion.svg>
@@ -112,7 +112,7 @@ const PortfolioPage = () => {
             href="/contact"
             className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
           >
-            Hire Me
+            Contact Me
           </Link>
         </div>
       </div>
