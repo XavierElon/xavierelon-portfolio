@@ -44,7 +44,7 @@ const ContactPage = () => {
       animate={{ y: '0%' }}
       transition={{ duration: 1 }}
     >
-      <div className="h-5/6 flex flex-col justify-center lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-5/6 flex flex-col justify-center items-center lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
           <div>
@@ -68,19 +68,19 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justfiy-center p-24 mb-24"
+          className="h-2/3 lg:h-5/6 lg:w-1/2 bg-white rounded-xl text-xl flex flex-col gap-8 justify-center p-24 mb-24 shadow-xl mt-40"
         >
-          <span>Dear Xavier Elon</span>
+          <span>Dear Xavier Elon,</span>
           <textarea
             rows={6}
             name="user_message"
-            className="bg-transparent border-b-2 border-b-black outline-none"
+            className="bg-transparent border-b-2 border-b-black outline-none bg-fuchsia-200 py-2 rounded-lg"
           />
           <span>My email address is: </span>
           <input
             name="user_email"
             type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
+            className="bg-transparent border-b-2 border-b-black outline-none bg-fuchsia-200 py-2 rounded-lg"
           />
           <span>Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
