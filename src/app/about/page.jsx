@@ -29,18 +29,24 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p>
-              Et labore sint aliqua dolore adipisicing laboris. Ex dolore veniam
-              exercitation Lorem occaecat eu id ex aliqua est excepteur. Tempor
-              amet consequat cillum ut magna ipsum deserunt ad incididunt
-              exercitation laborum qui sint. Laborum occaecat nulla elit
-              reprehenderit ad consectetur in pariatur excepteur ullamco
-              consectetur sunt labore. Mollit mollit incididunt occaecat esse
-              laborum eu in in minim. Ullamco fugiat ex ipsum officia voluptate
-              proident labore eu.
+              Hello! I am Xavier Elon, a full-stack software engineer based in
+              Orlando, FL who has a passion for technology, artificial
+              intelligence, space and blockchain. I am currently working for
+              Booz Allen as a Staff Engineer / Full stack software engineer!
+              I’ve had the privilege of working at Booz Allen, a consulting
+              firm, Deloitte, another consulting firm and uBreakiFix. I am
+              currently in school at Georgia Tech for a Masters in Computer
+              Science. I specialize in full-stack web development with a focus
+              on React, Angular, Node, and Python. I am working on developing my
+              machine learning engineer skills.
             </p>
 
             {/* BIOGRAPHY QUOTE  */}
-            <span>Lorem ipsum</span>
+            <span>
+              "I think it is possible for ordinary people to choose to be
+              extraordinary."
+              <br></br> - Elon Musk
+            </span>
 
             {/* BIOGRAPHY SIGN SVG */}
             <div className="self-end">
@@ -207,10 +213,13 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior Full-Stack Engineer
+                    Senior Full-Stack Engineer & Front-End Lead
                   </div>
                   {/* JOB DESCRIPTION */}
-                  <div className="p-3 text-sm italic">I worked here</div>
+                  <div className="p-3 text-sm italic">
+                    Full-stack engineer building products in React & Angular and
+                    Nest & Node JS for the backend. Front-end lead in Angular.
+                  </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     03/2023 - PRESENT
@@ -251,17 +260,21 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior Full-Stack Engineer
+                    Full-Stack Engineer
                   </div>
                   {/* JOB DESCRIPTION */}
-                  <div className="p-3 text-sm italic">I worked here</div>
+                  <div className="p-3 text-sm italic">
+                    Full-stack engineer focused on building products using
+                    React/Javscript/Typescript on Frontend and Node
+                    JS/Mongo/Postgres on the backend.
+                  </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    03/2023 - PRESENT
+                    04/2021 - 03/2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold">
-                    BOOZ-ALLEN HAMILTON
+                    DELOITTE
                   </div>
                 </div>
               </div>
@@ -272,17 +285,20 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior Full-Stack Engineer
+                    Dev Ops Engineer
                   </div>
                   {/* JOB DESCRIPTION */}
-                  <div className="p-3 text-sm italic">I worked here</div>
+                  <div className="p-3 text-sm italic">
+                    AWS focused dev ops aimed at improving pipelines and
+                    increasing developer productivity.
+                  </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     03/2023 - PRESENT
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold">
-                    BOOZ-ALLEN HAMILTON
+                    uBreakiFix
                   </div>
                 </div>
 
