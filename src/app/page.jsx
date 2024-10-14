@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import me from '../../public/Elon.jpg'
+import me from '../../public/hero2.jpg'
 
 const Homepage = () => {
   return (
@@ -29,6 +29,9 @@ const Homepage = () => {
             <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
               View My Work
             </button>
+            <div>
+              <div></div>
+            </div>
             <button className="p-4 rounded-lg ring-1 ring-black">
               Contact Me
             </button>
