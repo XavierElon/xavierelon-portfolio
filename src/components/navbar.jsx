@@ -7,10 +7,10 @@ import NavLink from './navLink'
 import { motion } from 'framer-motion'
 
 import logo from '../../public/logo.png'
-import leetcode from '../../public/leetcode.png'
+import leetcode from '../../public/leetcode-new.png'
 import linkedin from '../../public/linkedin.png'
 import github from '../../public/github.png'
-import youtube from '../../public/youtube.png'
+import youtube from '../../public/youtube-new.png'
 
 const links = [
   { url: '/', title: 'Home' },
@@ -140,7 +140,7 @@ const Navbar = () => {
           <Image src={linkedin} alt="" width={24} height={24} />
         </Link>
         <Link href="https://leetcode.com/u/XavierElon/">
-          <Image src={leetcode} alt="" width={30} height={30} />
+          <Image src={leetcode} alt="" width={24} height={24} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
