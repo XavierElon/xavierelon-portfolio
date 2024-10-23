@@ -42,8 +42,8 @@ const AboutPage = () => {
 
             {/* BIOGRAPHY QUOTE  */}
             <span>
-              "I think it is possible for ordinary people to choose to be
-              extraordinary."
+              I think it is possible for ordinary people to choose to be
+              extraordinary.
               <br></br> - Elon Musk
             </span>
 
