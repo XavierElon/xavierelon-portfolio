@@ -31,8 +31,8 @@ const AboutPage = () => {
               Hello! I am Xavier Elon, a full-stack software engineer based in
               Orlando, FL who has a passion for technology, artificial
               intelligence, space and blockchain. I am currently working for
-              Booz Allen as a Staff Engineer / Full stack software engineer.
-              I’ve had the privilege of working at Booz Allen, a consulting
+              Booz Allen as a Staff Engineer / Full stack software engineer. I
+              have had the privilege of working at Booz Allen, a consulting
               firm, Deloitte, another consulting firm and uBreakiFix. I am
               currently in school at Georgia Tech for a Masters in Computer
               Science. I specialize in full-stack web development with a focus
