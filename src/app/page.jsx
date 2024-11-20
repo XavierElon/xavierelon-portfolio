@@ -38,24 +38,16 @@ const Homepage = () => {
           </h1>
           {/* DESC */}
           <p className="md:text-xl p-8">
-            I am a full-stack software engineer specializing in React,
-            Typescript, Node, Express, and MongoDB. I am currently working at
-            Booz Allen and attending Georgia Tech for my MS in Computer Science
-            specializing in AI/Machine Learning. I have 5+ years of professional
-            experience. I have several side projects that I have built over the
-            years that can be seen in my Portfolio. I have a passion for
-            learning and building new things. I am always looking for new
-            opportunities to learn and grow. I currently newly reside in San
-            Francisco and am looking to join a local startup or Big Tech. My
-            previous portfolio website can be found at{' '}
-            <Link
-              href="https://xavierelon.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 underline hover:text-blue-700"
-            >
-              xavierelon.com
-            </Link>
+            I am a Senior Full Stack Software Engineer specializing in React,
+            Typescript, Node, Express, and many more technologies. I am
+            currently looking for a job in either a start up or tech based in
+            San Francisco (or near SF). I have 5+ years of professional
+            experience developing client-facing applications from 0 to 1. I have
+            experience building machine learning models and as a DevOps engineer
+            building infrastructure and pipelines. I have several side projects
+            that I have built over the years that can be seen in my Portfolio. I
+            have a passion for learning and building new things. I am always
+            looking for new opportunities to learn and grow.
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4 justify-center">

@@ -28,16 +28,16 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p>
-              Hello! I am Xavier Elon, a full-stack software engineer based in
-              Orlando, FL who has a passion for technology, artificial
+              Hello! I am Xavier Elon, a Full Stack Software Engineer based in
+              San Francisco, CA. I have a passion for technology, artificial
               intelligence, space and blockchain. I am currently working for
-              Booz Allen as a Staff Engineer / Full stack software engineer. I
-              have had the privilege of working at Booz Allen, a consulting
-              firm, Deloitte, another consulting firm and uBreakiFix. I am
-              currently in school at Georgia Tech for a Masters in Computer
-              Science. I specialize in full-stack web development with a focus
-              on React, Angular, Node, and Python. I am working on developing my
-              machine learning engineer skills.
+              Booz Allen as a Senior Full Stack Software Engineer. I have had
+              the privilege of working at Booz Allen, Deloitte, and uBreakiFix.
+              I am currently in school at Georgia Tech for a Masters in Computer
+              Science with a specialization in AI / Machine Learning. I
+              specialize in Javascript, Typescript, Python, React, Node, and
+              Angular. I am currently working on developing my machine learning
+              engineer skills.
             </p>
 
             {/* BIOGRAPHY QUOTE  */}
