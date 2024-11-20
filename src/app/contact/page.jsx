@@ -30,9 +30,9 @@ const ContactPage = () => {
           setSuccess(true)
           form.current.reset()
         },
-        (error) => {
+        (err) => {
           setError(true)
-          console.error('FAILED...', error.text)
+          console.error('FAILED...', err.text)
         }
       )
   }
