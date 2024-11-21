@@ -13,6 +13,8 @@ const items = [
     desc: "A full-stack website I architected and built that contains it's own local user authorization and authentication microservice that I wrote myself. Users can log in and chat with each other as well as chat with ChatGPT. More features and enhancements to come in the future. The front-end is written in Next.JS, React, and Typescript. The back-end consists of several microservices written in either Node/Express that are hosted on Heroku. The databases being used are MongoDB, PostgreSQL and Firebase for messages/authentication as well as authentication. Unit and integration tests are being done with Mocha and Chai. AWS is being used for pipelines, servers and domain names (CodePipeline, EC2, ELB, Route 53, S3, Codebuild, VPC, etc.)",
     img: '/xsj-chat-app.png',
     link: 'https://xsj-ui.vercel.app/',
+    githubLink: 'https://github.com/XavierElon/xsj-chat-app',
+    isLive: true,
   },
   {
     id: 2,
@@ -20,7 +22,9 @@ const items = [
     title: 'AI Chatbot App',
     desc: 'Full-stack AI chatbot. Front-end built in React/Typescript. Backend built in Node/Express. Authentication handled by Clerk. AI model used is Gemini Pro.',
     img: '/ai-chatbot.png',
-    link: 'https://github.com/XavierElon/ai-chatbot',
+    link: '',
+    githubLink: 'https://github.com/XavierElon/ai-chatbot',
+    isLive: false,
   },
   {
     id: 3,
@@ -29,6 +33,8 @@ const items = [
     desc: 'Lightweight, SEO friendly personal blog built in Hugo, vanilla Javascript and CSS. Write various blog posts about career and software engineering.',
     img: '/wtfprogrammingblog.png',
     link: 'https://wtfprogramming.io/',
+    githubLink: 'https://github.com/XavierElon/wtfprogrammingblog',
+    isLive: true,
   },
   {
     id: 4,
@@ -36,7 +42,9 @@ const items = [
     title: 'Users Authorization & Authentication Service',
     desc: 'Microservice for user models, authorization and authentication written in NodeJs, Express and Typescript. Unit and integration tests are written in Mocha and Chai.',
     img: '/users-service.png',
-    link: 'https://github.com/XavierElon/xsj-users-microservice',
+    link: '',
+    githubLink: 'https://github.com/XavierElon/xsj-users-microservice',
+    isLive: false,
   },
 ]
 
@@ -70,13 +78,26 @@ const PortfolioPage = () => {
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-3/4 h-56 rounded-lg md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[950px] xl:h-[550px] group cursor-pointer">
-                    <Link
-                      className="flex justify-end"
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                  <div
+                    className={`relative w-3/4 h-56 rounded-lg md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[950px] xl:h-[550px] group ${item.link ? 'cursor-pointer' : ''}`}
+                  >
+                    {item.link ? (
+                      <Link
+                        className="flex justify-end"
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={item.img}
+                          alt=""
+                          className="rounded-lg"
+                          fill
+                          objectFit="cover"
+                          objectPosition="center"
+                        />
+                      </Link>
+                    ) : (
                       <Image
                         src={item.img}
                         alt=""
@@ -85,10 +106,12 @@ const PortfolioPage = () => {
                         objectFit="cover"
                         objectPosition="center"
                       />
-                    </Link>
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-r ${item.color} opacity-0 group-hover:opacity-70 transition-opacity duration-300 rounded-lg`}
-                    ></div>
+                    )}
+                    {item.link && (
+                      <div
+                        className={`absolute inset-0 bg-gradient-to-r ${item.color} opacity-0 group-hover:opacity-70 transition-opacity duration-300 rounded-lg`}
+                      ></div>
+                    )}
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[900px]">
                     {item.desc}
@@ -100,7 +123,7 @@ const PortfolioPage = () => {
                     rel="noopener noreferrer"
                   >
                     <button className="p-2 md:p-4 md:text-md lg:p-8 text-lg bg-white text-gray-700 font-semibold m-4 rounded-2xl">
-                      See Demo
+                      Github Repo
                     </button>
                   </Link>
                 </div>
