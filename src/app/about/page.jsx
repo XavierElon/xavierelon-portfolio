@@ -287,7 +287,10 @@ const AboutPage = () => {
                     Dev Ops Engineer
                   </div>
                   {/* JOB DESCRIPTION */}
-                  <div className="p-3 text-sm italic">
+                  <div
+                    className="p-3 text-sm italic"
+                    style={{ marginTop: '2.5rem' }}
+                  >
                     AWS focused dev ops aimed at improving pipelines and
                     increasing developer productivity.
                   </div>
