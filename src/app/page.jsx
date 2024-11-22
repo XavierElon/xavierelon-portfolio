@@ -18,11 +18,11 @@ const Homepage = () => {
         {/* IMAGE CONTAINER */}
         <div className="lg:w-1/2 flex flex-col items-center justify-center mb-8 lg:mb-0">
           {/* Image Wrapper with Rounded Borders */}
-          <div className="relative w-full h-64 sm:h-96 flex items-center justify-center rounded-3xl overflow-hidden">
+          <div className="relative w-64 h-64 sm:w-96 sm:h-96 flex items-center justify-center rounded-md overflow-hidden">
             <Image
               src={me}
               alt="Xavier Elon's Profile Picture"
-              className="object-none rounded-full"
+              className="object-cover w-full h-full"
             />
           </div>
           {/* Text Underneath Image */}
