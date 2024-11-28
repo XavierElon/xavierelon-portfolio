@@ -8,9 +8,9 @@ import { motion } from 'framer-motion'
 
 import logo from '../../public/logo.png'
 import leetcode from '../../public/leetcode-new.png'
-import linkedin from '../../public/linkedin.png'
-import github from '../../public/github.png'
-import youtube from '../../public/youtube-new.png'
+import linkedin from '../../public/linkedin-tile.svg'
+import github from '../../public/github-icon.svg'
+import youtube from '../../public/youtube-icon.svg'
 
 const links = [
   { url: '/', title: 'Home' },
@@ -145,16 +145,16 @@ const Navbar = () => {
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3 justify-end">
         <Link href="https://github.com/XavierElon">
-          <Image src={github} alt="" width={24} height={24} />
+          <Image src={github} alt="" width={40} height={40} />
         </Link>
         <Link href="https://www.youtube.com/@xavierelon">
-          <Image src={youtube} alt="" width={24} height={24} />
+          <Image src={youtube} alt="" width={36} height={36} />
         </Link>
         <Link href="https://www.linkedin.com/in/xavierelon/">
-          <Image src={linkedin} alt="" width={24} height={24} />
+          <Image src={linkedin} alt="" width={30} height={30} />
         </Link>
         <Link href="https://leetcode.com/u/XavierElon/">
-          <Image src={leetcode} alt="" width={24} height={24} />
+          <Image src={leetcode} alt="" width={30} height={30} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
