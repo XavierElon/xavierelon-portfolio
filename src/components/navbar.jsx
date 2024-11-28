@@ -22,6 +22,11 @@ const links = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
+  const [isDarkTheme, setIsDarkTheme] = useState(false)
+
+  useEffect(() => {
+    // document.body.className = isDarkTheme ? 'dark-theme' : 'light-theme'
+  }, [isDarkTheme])
 
   useEffect(() => {
     const handleResize = () => {
@@ -117,10 +122,19 @@ const Navbar = () => {
       <div className="md:hidden lg:flex xl:w-1/3 justify-center">
         <Link
           href="/"
-          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
+          className={`text-sm rounded-md p-1 font-semibold flex items-center justify-center transition-colors duration-1000 ${isDarkTheme ? 'bg-black text-white' : 'bg-white text-black'}`}
+          onClick={() => setIsDarkTheme(!isDarkTheme)}
         >
-          <span className="text-white mr-1">Xavier</span>
-          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
+          <span
+            className={`mr-1 transition-colors duration-300 ${isDarkTheme ? 'text-white' : 'text-black'}`}
+          >
+            Xavier
+          </span>
+          <span
+            className={`w-12 h-8 rounded flex items-center justify-center transition-colors duration-300 ${
+              isDarkTheme ? 'bg-white text-black' : 'bg-black text-white'
+            }`}
+          >
             Elon
           </span>
         </Link>
