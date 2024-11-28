@@ -51,7 +51,11 @@ const Homepage = () => {
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4 justify-center">
-            <Link href="https://xavierelon.github.io/resume/resume.pdf">
+            <Link
+              href="https://xavierelon.github.io/resume/resume.pdf"
+              target="_blank"
+              rel="noopener_noreferrer"
+            >
               <button className="p-4 rounded-lg ring-1 bg-white ring-black hover:bg-gray-100 transition">
                 View Resume
               </button>
