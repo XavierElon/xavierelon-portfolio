@@ -49,7 +49,7 @@ const items = [
   {
     id: 5,
     color: 'from-red-300 to-pink-300',
-    title: 'Machine Learnning - Supervised Learning',
+    title: 'ML - Supervised Learning',
     desc: 'This is a supervised learning project that uses 3 algorithms on two classification problems. The 3 supervised algorithms are Neural Networks, Support Vector Machines, k-Nearest Neighbors. Different hyperparameters are explored for each algorithm. To see which ones exactly refer to the pdf explaining the experiment in its entirety.',
     img: '/supervised-learning.png',
     link: '',
@@ -59,7 +59,7 @@ const items = [
   {
     id: 6,
     color: 'from-pink-300 to-orange-300',
-    title: 'Machine Learnning - Unsupervised Learning',
+    title: 'ML - Unsupervised Learning',
     desc: 'An unsupervised learning project that uses 3 algorithms on two clustering problems. The 3 unsupervised algorithms are K-Means, Gaussian Mixture Models, and DBSCAN. Different hyperparameters are explored for each algorithm.',
     img: '/unsupervised-learning.png',
     link: '',
@@ -69,7 +69,7 @@ const items = [
   {
     id: 7,
     color: 'from-orange-300 to-green-300',
-    title: 'Machine Learnning - Randomized Optimization',
+    title: 'ML - Randomized Optimization',
     desc: 'This is a project that explores randomized optimization using 3 optimization problems on two fitness functions. The 3 random optimization problems are Random Hill Climbing, Genetic Algorithms and Simulated Annealing.',
     img: '/randomized-optimization.png',
     link: '',
